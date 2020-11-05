@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif !important;
+    margin-top: 100px !important;
+    margin-left: 164px !important;
+}
+
+.title {
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 79px;
+}
+
+/* Structuring the main content */
+.main-area {
+    margin-top:57px;
+    display:flex;
+    align-items: center;
+}
+.text, .form-control, .btn{
+    margin-right: 10px;
+}
+
+.text {
+    font-size: 24px;
+}
+input.form-control {
+    width: 86px;
+    height: 38px;
+}
+
+.btn {
+    align-self: flex-start;
+}
+.result-area{
+    font-size: 24px;
+}
+.error-area {
+    position: relative;
+    margin-left: 60px;
+}
+.input-error {
+    content: attr(data-error);
+    background: #F2DEDE;
+    color: #A94442;
+    border: 1px solid #EBCCCC;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 6px;
+    text-align: center;
+    position: relative;
+    margin-top: 10px;
+    width: 200px;
+}
+
+.error42 {
+    font-size: 16px;
+    color: #D9534F;
+}
+.error-display {
+    visibility: hidden;
+}
+/* Save Calculation */
+
+.save-calculation {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.save-calculation label {
+    margin: 0 0 0 6px;
+}
+
+
+/* Create class for loading spinners */
+.loading{
+    visibility: hidden;
+}
+.loading2 {
+    visibility: hidden;
+}
+
+/* Custom sorting selection */
+.btn-light-grey {
+    background-color: #E6E6E6 !important;
+}
+.row.history {
+    flex-direction: column;
+}
+
+.sorting-select{
+    margin-top: 18px;
+}
+
+.dropdown-toggle {
+    background-color: black;
+}
+
+/* Result title */
+.result-loading {
+    margin-top: 47px;
+    display: flex;
+    align-items: center;
+}
+.spinner-border.rslt{
+    margin-top: 12px;
+    margin-left: 20px;
+}
+
+/* List history */
+.listResult {
+    list-style: none;
+    font-size:  24px;
+}
+
+.result-title {
+    margin:0
+}
+
+.history h3 {
+    font-size: 54px;
+}
+
+.history ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.hr {
+    width: 1088px;
+}
+
+.separator {
+    border: 1px solid black
+}

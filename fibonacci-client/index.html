@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <title>Milestone 5</title>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1 class="row title">Fibonacci Calculator</h1>
+
+        <div class="row main-area">
+            <div class="text">The Fibonacci of</div>
+            <div>
+                <input type="text" class="form-control" placeholder="#" id="input">
+            </div>
+            <button class="btn btn-primary" type="submit" id="result-button">is</button>
+            <div class="spinner-border" role="status" id="loading1">
+                <span class="sr-only">Loading...</span>
+            </div>
+            <div class="result-area"></div>
+        </div>
+
+        <div class="error-area">
+            <div class="input-error" data-error=""></div>
+        </div>
+
+        <div class="row save-calculation">
+            <input type="checkbox" name="checkbox" id="checkbox">
+            <label for="checkbox">Save Calculation</label>
+        </div>
+
+        <div class="row history">
+            <div class="result-loading">
+                <h3 class="result-title">Results </h3>
+                <div class="spinner-border rslt" role="status" id="loading2">
+                    <span class="sr-only">Loading...</span>
+                </div>
+
+            </div>
+            <div class="sorting-select">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-light-grey dropdown-toggle" id="default-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sort by</button>
+                    <div class="dropdown-menu">
+                      <button class="dropdown-item num-asc" href="#">Number Asc</button>
+                      <div class="dropdown-divider"></div>
+                      <button class="dropdown-item num-desc" href="#">Number Desc</button>
+                      <div class="dropdown-divider"></div>
+                      <button class="dropdown-item date-asc" href="#">Date Asc</button>
+                      <div class="dropdown-divider"></div>
+                      <button class="dropdown-item date-desc" href="#">Date Desc</button>
+                    </div>
+                  </div>
+            </div>
+            
+            <ul class="line-history" style="padding: 0; margin-top: 60px">
+            </ul>
+        </div>
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="sorting.js"></script>
+</body>
+
+</html>
