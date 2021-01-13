@@ -1,13 +1,9 @@
-# fibonacci-server
-Javascript/NodeJS/NeDB Server that respond the fibonnaci of the given number.
+# fibonacci-server is a Javascript/NodeJS/NeDB Server that respond the fibonnaci of the given number.
+
 Also contains a local function in case you don't want to save the calculation.
 
-To run the app with the server, lauch fibonacci-server using:
-  
-   `npm install`
+To run the app with the server, check de README.me of the fibonacci-server folder.
 
-Then:
+Then, open the fibonacci-client in the browser.
 
-   `node app.js`
-   
-Now you can run fibonacci-client ! Enjoy :)
+Enjoy :)
